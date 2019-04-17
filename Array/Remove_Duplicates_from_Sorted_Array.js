@@ -27,6 +27,7 @@ for (int i = 0; i < len; i++) {
 }
  */
 
+ // runtime - 72 ms, Memory - 36.9 MB
  /**
  * @param {number[]} nums
  * @return {number}

@@ -17,7 +17,7 @@ It doesn't matter what values are set beyond the returned length.
 
 // Is there more better solution?
 
-// Solution1: runtime-60ms, Memory-33.8 MB
+ // Solution1: runtime - 60 ms, Memory - 33.8 MB
  /**
  * @param {number[]} nums
  * @param {number} val
@@ -34,7 +34,7 @@ var removeElement = function(nums, val) {
   return len;
 };
 
-// Solution2: runtime-60ms, Memory-34 MB
+// Solution2: runtime - 60 ms, Memory - 34 MB
 /**
  * @param {number[]} nums
  * @param {number} val
