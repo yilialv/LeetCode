@@ -10,3 +10,5 @@ Solutions to LeetCode.
 | 35 | [Search Insert Position](https://leetcode.com/problems/search-insert-position/) | [here](Array/Search_Insert_Position.js) | O(n) | O(1) | easy | Array, Binary Search
 | 53 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | [here](Array/Maximum_Subarray.js) | O(n) | O(1) | easy | Array, Dynamic Programming, Divide and Conquer
 | 66 | [Plus One](https://leetcode.com/problems/plus-one/) | [here](Array/Plus_One.js) | O(n) | O(1) | easy | Array
+(1) | easy | Array, Dynamic Programming, Divide and Conquer
+| 88 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | [here](Array/Merge_Sorted_Array.js) | O(n) | O(1) | easy | Array, Two Pointers

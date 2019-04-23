@@ -28,7 +28,7 @@ var plusOne = function(digits) {
           digits[len] = 0;
           len --;
           if (len < 0) {
-              return [1].concat(digits);
+            return [1].concat(digits);
           }   
       }
   } while (len >= 0);
