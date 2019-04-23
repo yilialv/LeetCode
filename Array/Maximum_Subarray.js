@@ -25,9 +25,43 @@ var maxSubArray = function(nums) {
               sum = nums[i];
           }
           if (max < sum) {
-              max = sum
+              max = sum;
           }
       }
   }
   return max;
 };
+
+
+/**
+ * @param {number[]} nums
+ * @param {number} left
+ * @param {number} right
+ * @return {number}
+ */
+var maxSubArray = function(nums, left, right) {
+if (left === right) {
+    return nums[0]
+}
+let mid = Math.floor((left + right) / 2)
+let leftMax = this.maxSubArray(nums, left, mid)
+let rightMax = this.maxSubArray(nums, mid + 1, right)
+let sum = 0
+let lmax = nums[mid]
+let rmax = nums[mid + 1]
+for (let i = mid; i >= left; i--) {
+    sum += nums[i]
+    if (sum > lmax) {
+        lmax = sum
+    }
+}
+sum = 0
+for (let i = mid + 1; i <= right; i++) {
+    sum += nums[i]
+    if (sum > rmax) {
+        rmax = sum
+    }
+}
+let midMax = lmax + rmax
+return leftMax > rightMax ? leftMax > midMax ? leftMax : midMax : rightMax > midMax ? rightMax : midMax
+}
