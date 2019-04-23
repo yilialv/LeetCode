@@ -5,6 +5,9 @@ Example:
 Input: [-2,1,-3,4,-1,2,1,-5,4],
 Output: 6
 Explanation: [4,-1,2,1] has the largest sum = 6.
+
+Follow up:
+If you have figured out the O(n) solution, try coding another solution using the divide and conquer approach, which is more subtle.
 */
 
 // runtime - 64 ms, Memory - 35.1 MB
@@ -40,28 +43,28 @@ var maxSubArray = function(nums) {
  * @return {number}
  */
 var maxSubArray = function(nums, left, right) {
-if (left === right) {
-    return nums[0]
-}
-let mid = Math.floor((left + right) / 2)
-let leftMax = this.maxSubArray(nums, left, mid)
-let rightMax = this.maxSubArray(nums, mid + 1, right)
-let sum = 0
-let lmax = nums[mid]
-let rmax = nums[mid + 1]
-for (let i = mid; i >= left; i--) {
-    sum += nums[i]
-    if (sum > lmax) {
-        lmax = sum
+    if (left === right) {
+        return nums[0]
     }
-}
-sum = 0
-for (let i = mid + 1; i <= right; i++) {
-    sum += nums[i]
-    if (sum > rmax) {
-        rmax = sum
+    let mid = Math.floor((left + right) / 2)
+    let leftMax = this.maxSubArray(nums, left, mid)
+    let rightMax = this.maxSubArray(nums, mid + 1, right)
+    let sum = 0
+    let lmax = nums[mid]
+    let rmax = nums[mid + 1]
+    for (let i = mid; i >= left; i--) {
+        sum += nums[i]
+        if (sum > lmax) {
+            lmax = sum
+        }
     }
-}
-let midMax = lmax + rmax
-return leftMax > rightMax ? leftMax > midMax ? leftMax : midMax : rightMax > midMax ? rightMax : midMax
+    sum = 0
+    for (let i = mid + 1; i <= right; i++) {
+        sum += nums[i]
+        if (sum > rmax) {
+            rmax = sum
+        }
+    }
+    let midMax = lmax + rmax
+    return leftMax > rightMax ? leftMax > midMax ? leftMax : midMax : rightMax > midMax ? rightMax : midMax
 }
