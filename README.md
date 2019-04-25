@@ -11,4 +11,5 @@ Solutions to LeetCode.
 | 53 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | [here](Array/Maximum_Subarray.js) | O(n) | O(1) | easy | Array, Dynamic Programming, Divide and Conquer
 | 66 | [Plus One](https://leetcode.com/problems/plus-one/) | [here](Array/Plus_One.js) | O(n) | O(1) | easy | Array
 | 88 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | [here](Array/Merge_Sorted_Array.js) | O(n) | O(1) | easy | Array, Two Pointers
-| 118 | [Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/) | [here](Array/Pascal's_Triangle.js) | O(n^2) | O(1) | easy | Array
+| 118 | [Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/) | [here](Array/Pascal's_Triangle.js) |  |  | easy | Array
+| 119 | [Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii/) | [here](Array/Pascal's_Triangle_II.js) |  |  | easy | Array
