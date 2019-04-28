@@ -13,3 +13,4 @@ Solutions to LeetCode.
 | 88 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | [here](Array/Merge_Sorted_Array.js) | O(n) | O(1) | easy | Array, Two Pointers
 | 118 | [Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/) | [here](Array/Pascal's_Triangle.js) |  |  | easy | Array
 | 119 | [Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii/) | [here](Array/Pascal's_Triangle_II.js) |  |  | easy | Array
+| 121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | [here](Array/Best_Time_to_Buy_and_Sell_Stock.js) | O(n) | O(1) | easy | Array, Dynamic Programming
