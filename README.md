@@ -1,5 +1,5 @@
 # LeetCode
-Solutions to LeetCode.
+Solutions to LeetCode. 
 
 ## Problems
 |  #  |         Title        |   Solution   |  Time complexity  | Space complexity  |  Difficulty  |   Tags               
